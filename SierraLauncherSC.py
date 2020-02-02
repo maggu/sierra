@@ -125,12 +125,14 @@ class SierraLauncher(object):
                           yoptions=options.EXPAND, xpadding=8, ypadding=2)
         self.image.show()
 
-        self.arrow = Gtk.Arrow(Gtk.ArrowType.LEFT, Gtk.ShadowType.OUT)
+        self.arrow = Gtk.Image.new_from_icon_name("go-previous-symbolic",
+                                                  Gtk.IconSize.BUTTON)
         self.table.attach(self.arrow, 1, 2, 0, 1, xoptions=options.SHRINK,
                           yoptions=options.SHRINK, xpadding=2, ypadding=2)
         self.arrow.show()
 
-        self.arrow = Gtk.Arrow(Gtk.ArrowType.RIGHT, Gtk.ShadowType.OUT)
+        self.arrow = Gtk.Image.new_from_icon_name("go-next-symbolic",
+                                                  Gtk.IconSize.BUTTON)
         self.table.attach(self.arrow, 3, 4, 4, 5, xoptions=options.SHRINK,
                           yoptions=options.SHRINK, xpadding=2, ypadding=2)
         self.arrow.show()
