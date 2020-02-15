@@ -3,6 +3,7 @@
 '''Sierra Launcher replacement by C C Magnus Gustavsson'''
 
 import gi, os
+gi.require_version('GdkPixbuf', '2.0')
 gi.require_version('Gtk', '3.0')
 from gi.repository import GdkPixbuf, Gtk
 from gi.repository.GdkPixbuf import InterpType as interp_type
